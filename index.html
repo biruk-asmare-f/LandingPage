@@ -82,10 +82,26 @@ footer { padding: 30px 0; text-align: center; color: #777; }
     text-align: center;
     margin-bottom: 15px;
 }
-.workflow-arrow i {
-    color: #ff9f1c; 
-    margin: 10px 0;
+.workflow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* centers arrows vertically */
 }
+
+.workflow-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;  /* match sibling box height */
+    margin: 10px;  /* optional spacing */
+}
+
+.workflow-arrow i {
+    color: #0a0a0a;
+    font-size: 10rem;
+}
+
 
 /* Responsive workflow for mobile */
 @media (max-width: 768px) {
